@@ -1,0 +1,186 @@
+:root {
+  --pink: #ff6b81;
+  --pink-light: #fff0f2;
+  --gray: #888;
+  --border: #ddd;
+  --bg: #fff;
+  --radius: 8px;
+  --font: "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.wrapper {
+  width: 360px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--pink);
+  margin-bottom: 24px;
+  position: relative;
+}
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 50px;
+  background: var(--border);
+}
+.title::before {
+  left: 0;
+}
+.title::after {
+  right: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--bg);
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+}
+
+.card.active {
+  border-color: var(--pink);
+  background: var(--pink-light);
+}
+
+.card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.units {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.badge.discount {
+  background: var(--pink);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.header .right {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.price {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.old {
+  font-size: 0.875rem;
+  color: var(--border);
+  text-decoration: line-through;
+}
+
+.sub {
+  margin: 4px 0 0;
+  margin-left: 32px;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+.popular-label {
+  margin-left: 32px;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.details {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  margin-left: 32px;
+}
+
+.card.active .details {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.row span {
+  width: 24px;
+}
+.row label {
+  font-size: 0.875rem;
+}
+.row select {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.total {
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  background: var(--pink);
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.powered {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-style: italic;
+}

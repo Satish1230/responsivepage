@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOGO Pricing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">YAY! It’s BOGO</div>
+
+    <div class="cards">
+      <!-- 1 Unit -->
+      <div class="card" data-price="10">
+        <input type="radio" name="plan" id="plan1">
+        <label for="plan1" class="header">
+          <div class="left">
+            <span class="units">1 Unit</span>
+            <span class="badge discount">10% Off</span>
+          </div>
+          <div class="right">
+            <span class="price">$10.00</span>
+            <span class="old">$24.00</span>
+          </div>
+        </label>
+        <div class="sub">Standard Price</div>
+        <div class="details">
+          <div class="row">
+            <span>#1</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="row">
+            <span>#2</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Unit (Most Popular) -->
+      <div class="card most-popular" data-price="18">
+        <input type="radio" name="plan" id="plan2">
+        <label for="plan2" class="header">
+          <div class="left">
+            <span class="units">2 Unit</span>
+            <span class="badge discount">20% Off</span>
+          </div>
+          <div class="right">
+            <span class="price">$18.00</span>
+            <span class="old">$24.00</span>
+          </div>
+        </label>
+        <div class="sub popular-label">Most Popular</div>
+        <div class="details">
+          <div class="row">
+            <span>#1</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="row">
+            <span>#2</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Unit -->
+      <div class="card" data-price="24">
+        <input type="radio" name="plan" id="plan3">
+        <label for="plan3" class="header">
+          <div class="left">
+            <span class="units">3 Unit</span>
+            <span class="badge discount">30% Off</span>
+          </div>
+          <div class="right">
+            <span class="price">$24.00</span>
+            <span class="old">$24.00</span>
+          </div>
+        </label>
+        <div class="details">
+          <div class="row">
+            <span>#1</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="row">
+            <span>#2</span>
+            <label>Size</label>
+            <select>
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <label>Colour</label>
+            <select>
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="delivery">Free Delivery</div>
+      <div class="total">Total : $0.00 USD</div>
+    </div>
+
+    <button class="btn">+ Add to Cart</button>
+    <div class="powered">@ Powered by Pumper</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
